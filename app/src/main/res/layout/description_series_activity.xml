@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainscrollviewSer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBackground"
+    tools:context=".Activities.Series_Description_Activity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/descripConstraintSer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activities.Series_Description_Activity">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutFadingImgSer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/MovieBigDescImgSer"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/shimmercol"
+                android:contentDescription="@string/moviePosterBigDescription"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="2:1.2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/fading_image_gradient" />
+        </FrameLayout>
+
+
+        <TextView
+            android:id="@+id/nameofmovieSer"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textAllCaps="false"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="30sp"
+
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline8Ser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayoutFadingImgSer"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8Ser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <TextView
+            android:id="@+id/textView16Ser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Story Line"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nameofmovieSer" />
+
+        <TextView
+            android:id="@+id/movieDecriptionTextSer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:lineSpacingExtra="8sp"
+            android:text="Loading . . . "
+            android:textColor="@color/readTextCol"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16Ser" />
+
+        <TextView
+            android:id="@+id/starCastTextIDSer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Star Cast"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RecyclerViewEpListSer" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/starcastRecyclerViewIDSer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/starCastTextIDSer" />
+
+        <TextView
+            android:id="@+id/recomendationsTextIDSer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Recommended"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/starcastRecyclerViewIDSer" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recomendationsRecyclerViewIDSer"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recomendationsTextIDSer" />
+
+
+        <!--        FIRST FAV TOG Butt-->
+        <ToggleButton
+            android:id="@+id/button_favorite1Ser"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/button_favorite"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+        <ToggleButton
+            android:id="@+id/downloadBTNtoggleSeries"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/download_btn_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/trailorButtSer"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="3dp"
+            android:backgroundTint="#9C24C8"
+            android:text="Trailer"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="7dp"
+            app:icon="@drawable/ic_trailer_icon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinnerTextlayoutSer" />
+
+        <!--        pg 13, stars, minutes-->
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/RecyclerViewEpListSer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trailorButtSer">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/spinnerTextlayoutSer"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/movieDecriptionTextSer">
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompletespinnerTextSer"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:inputType="none"
+                android:text="Select Season ----"
+                android:textColor="@color/FunbayNameCol"
+                android:textStyle="bold" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.layoutsapp">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LayoutsApp">
+        <activity android:name=".Activities.Series_Description_Activity">
+        </activity>
+        <activity android:name=".WebView.Movies_Server2_Webview"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activities.SearchResult_Activity" />
+        <activity android:name=".Activities.FavouriteList_Activity" />
+        <activity
+            android:name=".WebView.Series_WatchNow_Webview"
+            android:screenOrientation="landscape" />
+        <activity android:name=".Activities.Series_SeasonsEpisodesList_Activity" />
+        <activity
+            android:name=".WebView.Movies_Trailer_Webview"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".WebView.Movies_WatchNow_Webview"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".Activities.Login_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.SplashScreen_Activity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SideMenu.HowTo_Side_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SideMenu.FAQ_Side_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Settings_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.Movies_Description_Activity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+    </application>
+
+</manifest>

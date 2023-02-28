@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Fragments.Movies_Popular_Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/shimmerConstraintLayout">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerFrameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <include layout="@layout/shimmer_layout_movie"/>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintlayoutMovieshideshimmer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/loginBackground"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/funbayNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="FunBayy"
+                android:textColor="@color/FunbayNameCol"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.32" />
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.07" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.93" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/movie1card"
+                android:layout_width="0dp"
+                android:layout_height="340dp"
+                android:layout_marginTop="110dp"
+                android:backgroundTint="@color/cardBackgroundLight"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline13"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/guideline12"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/cardimage1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:contentDescription="@string/moviePosterSmallDescription"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toTopOf="@+id/textView2"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.50"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:riv_corner_radius="15dp" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="0dp"
+                        android:layout_height="50dp"
+                        android:text="TextView"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardimage1" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/movie2card"
+                android:layout_width="0dp"
+                android:layout_height="340dp"
+                android:backgroundTint="@color/cardBackgroundLight"
+
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline13"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/guideline12"
+                tools:layout_editor_absoluteY="520dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/cardimage2"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:contentDescription="@string/moviePosterSmallDescription"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.005"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:riv_corner_radius="15dp"
+                        app:srcCompat="@drawable/beautyimg2" />
+
+                    <TextView
+                        android:id="@+id/realesedon2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="@string/released_on_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/simpleTextCol"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/cardimage2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.35000002" />
+
+                    <TextView
+                        android:id="@+id/moviename2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/movie_name_chip_col"
+                        android:ellipsize="end"
+                        android:fontFamily="cursive"
+                        android:gravity="center"
+                        android:maxLines="2"
+                        android:text="Loading . . . "
+                        android:textAlignment="center"
+                        android:textColor="@color/simpleTextCol"
+                        android:textSize="34sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.071"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardimage2"
+                        app:layout_constraintVertical_bias="0.25" />
+
+                    <TextView
+                        android:id="@+id/realeseddate2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="Loading . . ."
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/cardimage2"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.52" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/movie3card"
+                android:layout_width="0dp"
+                android:layout_height="340dp"
+                android:layout_marginTop="70dp"
+                android:backgroundTint="@color/cardBackgroundLight"
+
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline13"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/guideline12"
+                app:layout_constraintTop_toBottomOf="@id/movie2card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/cardimage3"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:contentDescription="@string/moviePosterSmallDescription"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.005"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:riv_corner_radius="15dp"
+                        app:srcCompat="@drawable/beautyimg2" />
+
+                    <TextView
+                        android:id="@+id/realesedon3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="@string/released_on_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/simpleTextCol"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/cardimage3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.35000002" />
+
+                    <TextView
+                        android:id="@+id/moviename3"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/movie_name_chip_col"
+                        android:ellipsize="end"
+                        android:fontFamily="cursive"
+                        android:maxLines="2"
+                        android:text="Loading . . ."
+                        android:textAlignment="center"
+                        android:textColor="@color/simpleTextCol"
+                        android:textSize="34sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.071"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardimage3"
+                        app:layout_constraintVertical_bias="0.25" />
+
+                    <TextView
+                        android:id="@+id/realeseddate3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="Loading . . ."
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/cardimage3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.52" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/movie4card"
+                android:layout_width="0dp"
+                android:layout_height="340dp"
+                android:layout_marginTop="110dp"
+                android:backgroundTint="@color/cardBackgroundLight"
+
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:layout_constraintEnd_toStartOf="@id/guideline13"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/guideline12"
+                app:layout_constraintTop_toBottomOf="@id/movie3card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/cardimage4"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:contentDescription="@string/moviePosterSmallDescription"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.005"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:riv_corner_radius="15dp"
+                        app:srcCompat="@drawable/beautyimg2" />
+
+                    <TextView
+                        android:id="@+id/realesedon4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="@string/released_on_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/simpleTextCol"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/cardimage4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.35000002" />
+
+                    <TextView
+                        android:id="@+id/moviename4"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/movie_name_chip_col"
+                        android:ellipsize="end"
+                        android:fontFamily="cursive"
+                        android:maxLines="2"
+                        android:text="Loading . . ."
+                        android:textAlignment="center"
+                        android:textColor="@color/simpleTextCol"
+                        android:textSize="34sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.071"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardimage4"
+                        app:layout_constraintVertical_bias="0.25" />
+
+                    <TextView
+                        android:id="@+id/realeseddate4"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="6 - 4 - 2004"
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/cardimage4"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.52" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/movie5card"
+                android:layout_width="0dp"
+                android:layout_height="340dp"
+                android:layout_marginTop="110dp"
+                android:layout_marginBottom="100dp"
+                android:backgroundTint="@color/cardBackgroundLight"
+
+                app:cardCornerRadius="15dp"
+                app:cardElevation="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/guideline13"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toEndOf="@id/guideline12"
+                app:layout_constraintTop_toBottomOf="@id/movie4card">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/card5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/cardimage5"
+                        android:layout_width="170dp"
+                        android:layout_height="250dp"
+                        android:contentDescription="@string/moviePosterSmallDescription"
+                        android:scaleType="fitXY"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.005"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.0"
+                        app:riv_corner_radius="15dp"
+                        app:srcCompat="@drawable/beautyimg2" />
+
+                    <TextView
+                        android:id="@+id/realesedon5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed-light"
+                        android:text="@string/released_on_text"
+                        android:textAlignment="center"
+                        android:textColor="@color/simpleTextCol"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/cardimage5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.35000002" />
+
+                    <TextView
+                        android:id="@+id/moviename5"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/movie_name_chip_col"
+                        android:ellipsize="end"
+                        android:fontFamily="cursive"
+                        android:maxLines="2"
+                        android:text="Loading . . ."
+                        android:textAlignment="center"
+                        android:textColor="@color/simpleTextCol"
+                        android:textSize="34sp"
+                        android:textStyle="bold"
+                        android:typeface="normal"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.071"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cardimage5"
+                        app:layout_constraintVertical_bias="0.25" />
+
+                    <TextView
+                        android:id="@+id/realeseddate5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="serif"
+                        android:text="Loading . . ."
+                        android:textAlignment="center"
+                        android:textColor="#000000"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.46"
+                        app:layout_constraintStart_toEndOf="@+id/cardimage5"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.52" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

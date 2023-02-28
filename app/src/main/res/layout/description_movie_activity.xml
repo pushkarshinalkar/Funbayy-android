@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainscrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBackground"
+    android:scrollbars="none">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/descripConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".Activities.Movies_Description_Activity">
+
+        <FrameLayout
+            android:id="@+id/frameLayoutFadingImg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:id="@+id/ufo_animationView_Bigimg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                app:lottie_rawRes="@raw/loading_anim_ufo" />
+
+            <ImageView
+                android:id="@+id/MovieBigDescImg"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:contentDescription="@string/moviePosterBigDescription"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintDimensionRatio="2:1.2"
+                app:layout_constraintEnd_toEndOf="@id/guideline3"
+                app:layout_constraintStart_toStartOf="@id/guideline2"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom"
+                android:background="@drawable/fading_image_gradient" />
+        </FrameLayout>
+
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="1"
+
+            />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.04" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.4" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="152dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="380dp" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="650dp" />
+
+        <TextView
+            android:id="@+id/nameofmovie"
+            android:layout_width="0dp"
+            android:layout_height="90dp"
+            android:layout_marginTop="16dp"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif-condensed"
+            android:gravity="center"
+            android:maxLines="2"
+            android:textAllCaps="false"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="30sp"
+
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideline8"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayoutFadingImg"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.8" />
+
+        <!--        FIRST FAV TOG Butt-->
+        <ToggleButton
+            android:id="@+id/button_favorite1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="310dp"
+            android:background="@drawable/button_favorite"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <!--        Second FAV TOG Butt-->
+
+        <!--        Third FAV TOG Butt-->
+
+        <!--        Fourth FAV TOG Butt-->
+
+        <!--        Fifth FAV TOG Butt-->
+
+
+        <ToggleButton
+            android:id="@+id/downloadBTNtoggle"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="360dp"
+            android:background="@drawable/download_btn_selector"
+            android:checked="false"
+            android:text=""
+            android:textOff=""
+            android:textOn=""
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.94"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/MovieTagline"
+            android:layout_width="0dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="8dp"
+            android:ellipsize="end"
+            android:fontFamily="serif-monospace"
+            android:maxLines="1"
+            android:text="Loading . . ."
+            android:textAlignment="center"
+            android:textColor="@color/readTextCol"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/watchnowButt"
+            app:layout_constraintEnd_toStartOf="@+id/guideline3"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/guideline2"
+            app:layout_constraintTop_toBottomOf="@+id/nameofmovie"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/trailorButt"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#C82448"
+            android:text="Trailer"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="7dp"
+            app:icon="@drawable/ic_trailer_icon"
+            app:layout_constraintBaseline_toBaselineOf="@+id/watchnowButt"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9"
+            app:layout_constraintHorizontal_bias="0.8"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <!--        pg 13, stars, minutes-->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/watchnowButt"
+            android:layout_width="0dp"
+            android:layout_height="47dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:backgroundTint="#C82448"
+            android:text="Watch Now"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:cornerRadius="7dp"
+            app:icon="@drawable/ic_watch_now_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/trailorButt"
+            app:layout_constraintTop_toBottomOf="@id/MovieTagline" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.5" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="380dp" />
+
+        <View
+            android:id="@+id/borderline1"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/trailorButt"
+            app:layout_constraintVertical_bias="0.028" />
+
+        <View
+            android:id="@+id/borderline2"
+            style="@style/Divider"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.494"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderline1" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/button11"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/movie_name_chip_col"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/borderline2"
+            app:layout_constraintEnd_toStartOf="@+id/button12"
+            app:layout_constraintStart_toEndOf="@+id/button10"
+            app:layout_constraintTop_toBottomOf="@+id/borderline1">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/time"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.13"
+                    app:srcCompat="@drawable/ic_watchtime_icon" />
+
+                <TextView
+                    android:id="@+id/MovieWatchtimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=". . . "
+                    android:textColor="@color/FunbayNameCol"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.8" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/button10"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/movie_name_chip_col"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/borderline2"
+            app:layout_constraintEnd_toStartOf="@+id/button11"
+            app:layout_constraintStart_toEndOf="@+id/button8"
+            app:layout_constraintTop_toBottomOf="@+id/borderline1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/rating"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.13"
+                    app:srcCompat="@drawable/ic_pg_rating_icon" />
+
+                <TextView
+                    android:id="@+id/MovieRatingText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=". . . "
+                    android:textColor="@color/FunbayNameCol"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.8" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:id="@+id/button12"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/movie_name_chip_col"
+            app:cardCornerRadius="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/borderline2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/button11"
+            app:layout_constraintTop_toBottomOf="@+id/borderline1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/language"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.13"
+                    app:srcCompat="@drawable/ic_language_icon" />
+
+                <TextView
+                    android:id="@+id/MovieLanguageText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=". . . "
+                    android:textColor="@color/FunbayNameCol"
+                    android:textSize="18sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.8" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/button8"
+            android:layout_width="74dp"
+            android:layout_height="74dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="@color/movie_name_chip_col"
+            app:cardCornerRadius="20dp"
+
+            app:layout_constraintBottom_toTopOf="@+id/borderline2"
+            app:layout_constraintEnd_toStartOf="@+id/button10"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderline1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:contentDescription="@string/stars"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.13"
+                    app:srcCompat="@drawable/ic_starrating_icon" />
+
+                <TextView
+                    android:id="@+id/MovieStarsText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=". . . "
+                    android:textColor="@color/FunbayNameCol"
+                    android:textSize="16sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.8" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_begin="578dp" />
+
+        <TextView
+            android:id="@+id/movieDecriptionText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="160dp"
+            android:fontFamily="sans-serif-condensed-light"
+            android:lineSpacingExtra="8sp"
+            android:text="Loading . . . "
+            android:textColor="@color/readTextCol"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderline1" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="115dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Story Line"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintBottom_toTopOf="@+id/movieDecriptionText"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/borderline1" />
+
+        <TextView
+            android:id="@+id/starCastTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Star Cast"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/movieDecriptionText" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/starcastRecyclerViewID"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/starCastTextID" />
+
+        <TextView
+            android:id="@+id/recomendationsTextID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-condensed"
+            android:text="Recommended"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/starcastRecyclerViewID" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recomendationsRecyclerViewID"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/recomendationsTextID" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

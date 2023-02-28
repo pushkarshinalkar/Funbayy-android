@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cnb_unselectedColor="#FFFFFF">
+
+
+
+
+        <item android:title="Follow us"
+            android:id="@+id/followUsId">
+            <menu>
+                <group
+                    android:id="@+id/follow"
+                    android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/Inst_button"
+                        android:icon="@drawable/instagram_icon"
+                        android:title="Instagram" />
+
+                    <item
+                        android:id="@+id/YouTube_button"
+                        android:icon="@drawable/discord_icon"
+                        android:title="Discord" />
+
+                    <item
+                        android:id="@+id/Twitter_button"
+                        android:icon="@drawable/internet_icon"
+                        android:title="Website" />
+                </group>
+            </menu>
+
+
+        </item>
+
+
+        <item android:title="Help!"
+            android:id="@+id/HelpId">
+            <menu>
+              <group
+                  android:id="@+id/help_us"
+                  android:checkableBehavior="single">
+
+                  <item
+                      android:id="@+id/How_to"
+                      android:icon="@drawable/question_icon"
+                      android:title="How do I?"
+                       />
+
+                  <item
+                      android:id="@+id/FAQ"
+                      android:icon="@drawable/q_a_icon"
+                      android:title="FAQ" />
+
+              </group>
+            </menu>
+
+
+
+
+
+        </item>
+
+
+
+
+
+        <item android:title="Whats new"
+            android:id="@+id/WhatsNewId">
+            <menu>
+              <group
+                  android:id="@+id/updates_new"
+                  android:checkableBehavior="single">
+
+                  <item
+                      android:id="@+id/Updates"
+                      android:icon="@drawable/check_updates_icon"
+                      android:title="Check for Updates" />
+
+
+              </group>
+            </menu>
+
+
+
+
+
+        </item>
+
+
+
+
+        <item android:title="Feedback"
+            android:id="@+id/FeedbackId">
+            <menu>
+                <group
+                    android:id="@+id/Feedback_id"
+                    android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/Rateus_id"
+                        android:icon="@drawable/rate_us_icon"
+                        android:title="Rate us" />
+
+                    <item
+                        android:id="@+id/Report_id"
+                        android:icon="@drawable/report_bugs_icon"
+                        android:title="Report bugs" />
+
+                </group>
+            </menu>
+
+
+
+
+
+        </item>
+
+
+
+
+</menu>

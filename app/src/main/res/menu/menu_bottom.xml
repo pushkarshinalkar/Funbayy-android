@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    app:cnb_unselectedColor="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Movies"
+        android:id="@+id/Movie_frag_button"
+        android:icon="@drawable/ic_movie_icon"
+        app:cnb_iconColor="@color/bottomNavIconCol"
+        app:cnb_backgroundColor="@color/bottomNavChipCol"
+        app:cnb_textColor="@color/bottomNavTextCol" />
+    <item
+        android:title="TV Shows"
+        android:id="@+id/Series_frag_button"
+        android:icon="@drawable/ic_series_icon"
+        app:cnb_iconColor="@color/bottomNavIconCol"
+        app:cnb_backgroundColor="@color/bottomNavChipCol"
+        app:cnb_textColor="@color/bottomNavTextCol" />
+    <item
+        android:title="Anime"
+        android:id="@+id/Upcoming_frag_button"
+        android:icon="@drawable/ic_upcoming_icon"
+        app:cnb_iconColor="@color/bottomNavIconCol"
+        app:cnb_backgroundColor="@color/bottomNavChipCol"
+        app:cnb_textColor="@color/bottomNavTextCol"/>
+    <item
+        android:title="Profile"
+        android:id="@+id/Account_frag_button"
+        android:icon="@drawable/ic_profile_icon"
+        app:cnb_iconColor="@color/bottomNavIconCol"
+        app:cnb_backgroundColor="@color/bottomNavChipCol"
+        app:cnb_textColor="@color/bottomNavTextCol"/>
+
+    <item
+        android:title="Useless"
+        android:id="@+id/useless"
+        android:icon="@drawable/setting_other_icon"
+        app:cnb_iconColor="@color/bottomNavIconCol"
+        app:cnb_backgroundColor="@color/bottomNavChipCol"
+        app:cnb_textColor="@color/bottomNavTextCol"/>
+
+
+</menu>

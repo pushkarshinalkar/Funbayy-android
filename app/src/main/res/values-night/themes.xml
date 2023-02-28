@@ -1,0 +1,66 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.LayoutsApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/floatIconCol</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+        <item name="preferenceFragmentListStyle">@style/prefcol</item>
+        <item name="preferenceCategoryTitleTextAppearance">@style/SettingsTitleText</item>
+        <item name="alertDialogTheme">@style/DialogTheme</item>
+        <item name="floatingActionButtonStyle">@style/FloatingButtonStyle</item>
+    </style>
+
+    <style name="Divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">#BBBFC0</item>
+    </style>
+
+    <style name="SideDiv">
+        <item name="android:listDivider">@color/sideDividerCol</item>
+
+    </style>
+
+    <style name="prefcol">
+        <item name="android:background">@color/settingsCol</item>
+    </style>
+
+    <style name="SideMenuTitleText">
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="android:textSize">14sp</item>
+
+    </style>
+    <style name="SettingsTitleText">
+        <item name="android:textColor">@color/settingsTitleText</item>
+        <item name="android:textSize">15sp</item>
+
+    </style>
+    <style name="FloatingButtonStyle" parent="Widget.Design.FloatingActionButton">
+        <item name="shapeAppearanceOverlay">@style/FabShapeStyle</item>
+
+    </style>
+
+    <style name="FabShapeStyle" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.MaterialComponents.Light.Dialog.Alert">
+        <item name="android:background">@color/loginBackground</item>
+        <item name="android:textColor">@color/teal_200</item>
+        <item name="textColorAlertDialogListItem">@color/readTextCol</item>
+        <item name="dialogCornerRadius">25dp</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+</resources>

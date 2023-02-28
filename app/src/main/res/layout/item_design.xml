@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/loginBackground">
+
+    <View
+        android:id="@+id/borderline2"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/QualitesCardid" />
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/QualitesCardid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/recycleritemBackCol">
+
+            <ImageView
+                android:id="@+id/cardimageEpisodeitem"
+                android:layout_width="150dp"
+                android:layout_height="70dp"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <View
+                android:id="@+id/recycleritemborder"
+                style="@style/Divider"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/itemcarddesctext" />
+
+            <TextView
+                android:id="@+id/episodename"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="16dp"
+                android:text="Episodename"
+                android:textColor="@color/FunbayNameCol"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/cardimageEpisodeitem"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/datetextItemcard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/1/1111"
+                android:textColor="@color/FunbayNameCol"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.2"
+                app:layout_constraintStart_toEndOf="@+id/cardimageEpisodeitem"
+                app:layout_constraintTop_toBottomOf="@+id/episodename"
+                app:layout_constraintVertical_bias="0.120000005" />
+
+            <TextView
+                android:id="@+id/itemcarddesctext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="Loading . . . "
+                android:textColor="#787878"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toTopOf="@id/recycleritemborder"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardimageEpisodeitem" />
+
+            <TextView
+                android:id="@+id/episodeNoid"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="@color/FunbayNameCol"
+                android:textSize="14sp"
+                app:layout_constraintBaseline_toBaselineOf="@+id/episodename"
+                app:layout_constraintEnd_toStartOf="@+id/episodename"
+                app:layout_constraintStart_toEndOf="@+id/cardimageEpisodeitem" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

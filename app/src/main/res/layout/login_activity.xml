@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/loginBackground"
+    tools:context=".Activities.Login_Activity">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/roundedImageViewLogin"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/profile_fb_icon"
+        app:layout_constraintBottom_toTopOf="@+id/loginTextInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.23000002"
+        app:riv_border_color="@color/bottomNavChipCol"
+        app:riv_border_width="2dp"
+        app:riv_corner_radius="100dp">
+
+    </com.makeramen.roundedimageview.RoundedImageView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginPasswordInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="Set PIN"
+        app:counterEnabled="true"
+        app:counterMaxLength="4"
+        app:counterTextColor="@color/profileHypertext"
+        app:endIconMode="password_toggle"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginTextInput"
+        app:layout_constraintVertical_bias="0.110000014"
+        app:startIconDrawable="@drawable/ic_lock_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginPasswordInputEditable"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:inputType="number"
+            android:maxLength="4"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/loginTextInput"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:hint="Set username"
+        app:counterEnabled="true"
+        app:counterMaxLength="17"
+        app:counterTextColor="@color/profileHypertext"
+        app:endIconMode="clear_text"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.39"
+        app:startIconDrawable="@drawable/ic_person_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/loginTextInputEditable"
+            android:layout_width="310dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="15dp"
+            android:inputType="text"
+            android:maxLength="17"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="381dp" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/beautifulExpid"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="You are just one step from watching your favourite movies and tv shows!!"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerButt"
+        app:layout_constraintVertical_bias="0.45" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/registerButt"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#DFC3E4"
+        android:text="SIGN IN"
+        android:textColor="@color/simpleTextCol"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:cornerRadius="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginPasswordInput"
+        app:layout_constraintVertical_bias="0.16000003" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:ems="2"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <EditText
+        android:id="@+id/editTextNumberPasswordtwo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:ems="2"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPassword1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberPassword3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:ems="2"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberPasswordtwo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <EditText
+        android:id="@+id/editTextNumberPassword3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/teal_200"
+        android:ems="2"
+        android:inputType="numberPassword"
+        android:maxLength="1"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberPasswordtwo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editTextNumberPassword4"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.456" />
+
+    <TextView
+        android:id="@+id/hiTextLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text=""
+        android:textColor="@color/FunbayNameCol"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundedImageViewLogin"
+        app:layout_constraintVertical_bias="0.0"
+        tools:text="HI," />
+
+    <TextView
+        android:id="@+id/verifyPINid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="32dp"
+        android:text="Verify 4-digit security PIN"
+        android:textColor="@color/FunbayNameCol"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberPassword3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hiTextLogin" />
+
+    <TextView
+        android:id="@+id/forgotPassid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot PIN?"
+        android:textColor="@color/FunbayNameCol"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/logoutPassid"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/registerButt"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+    <TextView
+        android:id="@+id/logoutPassid"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="Logout"
+        android:clickable="true"
+        android:textColor="@color/teal_200"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/forgotPassid"
+        app:layout_constraintTop_toBottomOf="@+id/registerButt"
+        app:layout_constraintVertical_bias="0.13999999" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

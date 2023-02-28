@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?selectableItemBackground"
+    android:clickable="true"
+    android:focusable="true"
+    android:padding="15dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView
+        android:id="@+id/favourite_smallimg"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:focusable="true"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:riv_corner_radius="5dp" />
+
+    <TextView
+        android:id="@+id/item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:textColor="@color/FunbayNameCol"
+        android:fontFamily="@font/demofont"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toStartOf="@+id/item_remove_favourites"
+        app:layout_constraintStart_toEndOf="@id/favourite_smallimg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/item_subText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="5dp"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/item_remove_favourites"
+        app:layout_constraintStart_toEndOf="@id/favourite_smallimg"
+        app:layout_constraintTop_toBottomOf="@id/item_title" />
+
+    <ImageView
+        android:id="@+id/item_remove_favourites"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:paddingBottom="15dp"
+        android:src="@drawable/ic_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

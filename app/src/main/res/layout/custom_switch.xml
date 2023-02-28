@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.SwitchCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/custom_switch_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    app:track="@drawable/switch_track"
+    android:thumb="@drawable/switch_thumb">
+
+</androidx.appcompat.widget.SwitchCompat>

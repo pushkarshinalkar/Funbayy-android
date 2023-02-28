@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "561986675195",
+    "firebase_url": "https://funbayy-app-firebase-default-rtdb.firebaseio.com",
+    "project_id": "funbayy-app-firebase",
+    "storage_bucket": "funbayy-app-firebase.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561986675195:android:0524ee23bba2db1971ab5e",
+        "android_client_info": {
+          "package_name": "com.example.layoutsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561986675195-70d21a9hkd2norfg8gkfmmkun0q9c24n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.layoutsapp",
+            "certificate_hash": "15fc7c393228d83ba8d4869762dff9e3b3ab8bbe"
+          }
+        },
+        {
+          "client_id": "561986675195-lcn5imili4icoe3esa0qms6u3ig2li7b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDmlhF_kSP9ohWYq4Jc5IY2Exz6vhA9ek"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561986675195-lcn5imili4icoe3esa0qms6u3ig2li7b.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

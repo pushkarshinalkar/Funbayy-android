@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#141f23</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="lightWhite">#1E1820</color>
+
+
+    <color name="sideDividerCol">#14D9FC</color>
+    <color name="bottomNavCol">#292F31</color>
+    <color name="backgroundColLight">#312334</color>
+    <color name="cardBackgroundLight">#576B7A</color>
+    <color name="settingsCol">#312334</color>
+    <color name="settingsTitleText">#191A1A</color>
+
+
+
+    <color name="SimpleIconCol">#FFFFFF</color>
+    <color name="FunbayNameCol">#FFFFFF</color>
+    <color name="simpleTextCol">#D8D8D8</color>
+    <color name="bottomNavChipCol">#FFB217</color>
+    <color name="bottomNavIconCol">#000000</color>
+    <color name="bottomNavTextCol">#000000</color>
+    <color name="floatButCol">#345050</color>
+    <color name="floatIconCol">#FF03DAC5</color>
+
+    <color name="sideMenuStart">#1E1E1E</color>
+    <color name="sideMenuEnd">#1E1E1E</color>
+    <color name="sideMenuTitle">#FFB217</color>
+
+
+    <color name="profileHypertext">#93B5B3</color>
+    <color name="splashCol">#050505</color>
+    <color name="sideMenuIconCol">#000000</color>
+    <color name="profilecountcol">#000000</color>
+    <color name="profileNumcountcol">#C3CEEB</color>
+
+    <color name="movie_name_chip_col">#363A4A</color>
+
+    <color name="discRateIcon">#FF03DAC5</color>
+
+    <color name="bookmarkCol">#B388FF</color>
+    <color name="readTextCol">#D8D8D8</color>
+
+    <color name="loginBackground">#312334</color>
+    <color name="shimmercol">#dddddd</color>
+
+    <color name="recycleritemBackCol">#363A4A</color>
+
+    <color name="topChoiceChipUnselected">#576B7A</color>
+    <color name="topChoiceChipselected">#4F5167</color>
+
+    <color name="topChoiceChip">#576B7A</color>
+
+    <color name="expandableFAQ">#736F85</color>
+    <color name="providerBackgroundColor">#312334</color>
+
+    <color name="providerCardTextColor">#C7C7C7</color>
+
+    <color name="qualitiesBackgroundColor">#312334</color>
+
+    <color name="qualitieCardBackgroundCol">#736F85</color>
+    <color name="FAQbackgroundCOL">#312334</color>
+    <color name="profileButtCOl">#7E5F8E</color>
+
+
+
+
+
+
+
+</resources>

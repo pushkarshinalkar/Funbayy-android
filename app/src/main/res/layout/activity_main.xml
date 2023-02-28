@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintlay1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/floatButCol"
+        android:contentDescription="@string/fab1"
+        android:elevation="20dp"
+        android:onClick="sidemenucode"
+        app:borderWidth="0dp"
+        app:fabSize="mini"
+        app:layout_constraintBottom_toBottomOf="@+id/drawerlayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.03"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/drawerlayout"
+        app:layout_constraintVertical_bias="0.03"
+        app:maxImageSize="30dp"
+        app:srcCompat="@drawable/ic_sidemenu" />
+
+
+    <androidx.drawerlayout.widget.DrawerLayout
+        android:id="@+id/drawerlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:openDrawer="start">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayMainAc"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/loginBackground">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/roundedImageView"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/profile_fb_icon"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.01999998"
+                app:riv_border_color="@color/bottomNavChipCol"
+                app:riv_border_width="2dp"
+                app:riv_corner_radius="100dp">
+
+            </com.makeramen.roundedimageview.RoundedImageView>
+
+            <TextView
+                android:id="@+id/profileDisplayName"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:textColor="@color/FunbayNameCol"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/roundedImageView"
+                app:layout_constraintVertical_bias="0.0">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/funbaynameMainID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:text="FunBayy"
+                android:textColor="@color/FunbayNameCol"
+                android:textSize="32sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="6dp"
+                android:contentDescription="@string/fab2"
+                android:elevation="20dp"
+                android:onClick="settingsCode"
+                app:backgroundTint="@color/floatButCol"
+                app:fabSize="mini"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.97"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.03"
+                app:maxImageSize="30dp"
+                app:srcCompat="@drawable/ic_icons480" />
+
+
+            <FrameLayout
+                android:id="@+id/frameContainerLists"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="170dp"
+                android:layout_marginBottom="60dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0">
+
+            </FrameLayout>
+
+            <com.ismaeldivita.chipnavigation.ChipNavigationBar
+                android:id="@+id/ChipBottom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@drawable/rounded"
+                android:padding="8dp"
+                app:cnb_menuResource="@menu/menu_bottom"
+                app:cnb_unselectedColor="#FFFFFF"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+            </com.ismaeldivita.chipnavigation.ChipNavigationBar>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupMovieID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedChip="@+id/chipPopular"
+                app:layout_constraintBottom_toTopOf="@+id/frameContainerLists"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPopular"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:text="Popular"
+                    android:textAlignment="center"
+                    app:chipBackgroundColor="@color/top_chip_selection_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTopRated"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Top Rated"
+                    android:textAlignment="center"
+                    app:chipBackgroundColor="@color/top_chip_selection_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipUpcoming"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:text="Upcoming"
+                    android:textAlignment="center"
+                    app:chipBackgroundColor="@color/top_chip_selection_color" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupSeriesID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedChip="@+id/chipPopularSeries"
+                app:layout_constraintBottom_toTopOf="@+id/frameContainerLists"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipPopularSeries"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:text="Popular"
+                    android:textAlignment="center"
+                    app:chipBackgroundColor="@color/top_chip_selection_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipTopRatedSeries"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Top Rated"
+                    android:textAlignment="center"
+                    app:chipBackgroundColor="@color/top_chip_selection_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipUpcomingSeries"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="55dp"
+                    android:text="Airing Today"
+                    android:textAlignment="center"
+                    app:chipBackgroundColor="@color/top_chip_selection_color" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chipGroupAnimeID"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:checkedChip="@+id/chipAnimeMovies"
+                app:layout_constraintBottom_toTopOf="@+id/frameContainerLists"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.496"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.9"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAnimeMovies"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:text="Movies"
+                    android:textAlignment="center"
+                    app:chipBackgroundColor="@color/top_chip_selection_color" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipAnimeSeries"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="100dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="Tv Shows"
+                    android:textAlignment="center"
+                    app:chipBackgroundColor="@color/top_chip_selection_color" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchViewMovies"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_search_background"
+                android:imeOptions="actionSearch"
+                app:iconifiedByDefault="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline16"
+                app:layout_constraintStart_toStartOf="@+id/guideline15"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:queryBackground="@null"
+                app:queryHint="Search Movies" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchViewSeries"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:background="@drawable/rounded_search_background"
+                android:imeOptions="actionSearch"
+                app:iconifiedByDefault="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/guideline16"
+                app:layout_constraintStart_toStartOf="@+id/guideline15"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.027"
+                app:queryBackground="@null"
+                app:queryHint="Search Series" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.16"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.84"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="@drawable/shadow_button"
+            android:theme="@style/SideDiv"
+            app:headerLayout="@layout/side_menu_header"
+            app:itemTextColor="@color/simpleTextCol"
+            app:menu="@menu/side_menu"/>
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">FunBayy</string>
+
+    <string name="para">Identification  of a person to be himself has been a historical
+concern. The persons today get identified by their  PIN, passwords. But with the increasing insecure , where a person does not know when his ID
+card, password or signature will be stolen, there is an  need for providing an identification system that
+recognize a person based on attributes that are impossible
+to steal. The Iris with its unique characteristics provides the
+errorless way of recognizing individuals. The Iris  system uses a video based system to locate the Iris in
+the eye. The information of the Iris is then converted to the
+IrisCode, which then is compared with the stored IrisCode
+for the identification of the individual. The unique nature of
+the Iris guarantee that the individual is recognized to be
+himself. No two persons have the same Iris structure,not
+even the same person’s two eyes have the same structure of</string>
+
+    <string name="FAQ1ans">No, Funbayy only collects necessary information for the usability of app and for security purposes. \nLike
+    Username and password for personal access and other optional info of email , phone_no for future addition of features.
+    All the data is stored locally in your phone for now.</string>
+    <string name="FAQ2ans">Nowadays almost every big production company is starting its own streaming service , because of which
+    user are forced to pay for multiple streaming services. \nFunbayy was created as a collection of all movies and tv shows from
+    different streaming services into a single application free of cost</string>
+    <string name="FAQ3ans">Funbayy does not own or host any of the movies / Tvshows listed in this app. \It fetches the information
+    available on the internet and shows it in this app.\nThis app is not made for commercial use and was intended as a hobby project/for personal use.</string>
+    <string name="FAQ4ans">Currently there is no option for downloading whole season altogether as we ran into issues while implementing this feature.\n
+    We are working on this feature and maybe this feature will be available soon..</string>
+    <string name="FAQ5ans">There was no need to implement an another search bar for anime as anime movies / Tvshows can be searched in
+    Movies / Tvshows search bar respectively</string>
+    <string name="FAQ6ans">You may not be able to watch some of the listed content due to following reasons -\n
+    \n1) The movie/Tvshow is too old and so is not available
+    \n2) Your Internet connection might be slow , Try refreshing the internet connection and reloading the content
+    \n3) The movie has not released/just released and is not available on any streaming service
+    \n4) The movie/Tvshow got taken down due to copyright violation from the hosting server
+    </string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="remind_to_take_a_break">Remind me to take a break</string>
+    <string name="key_upload_quality">key_upload_quality</string>
+    <string name="remind_me">Remind me to take a break</string>
+    <string name="remind_me_for_bed_time">remind_me_for_bed_time</string>
+    <string name="remind_for_bed_time">Remind me for bed time</string>
+    <string name="limit_data_usage">prefs_limit_data_usage</string>
+    <string name="stream_video">Only stream HD video on Wi-Fi</string>
+    <string name="limit_mobile_usage">Limit mobile data usage</string>
+    <string name="double_tap_to_seek">Double-tap to seek</string>
+    <string name="pref_seek_val">pref_seek_val</string>
+    <string name="seconds">seconds</string>
+    <string name="uploads">Uploads</string>
+    <string name="pref_uploads">pref_uploads</string>
+    <string name="specify_network_prefs">Specify network preferences for uploads</string>
+    <string name="prefs_restricted_mode">prefs_restricted_mode</string>
+    <string name="restricated_mode">Restricted Mode can help to hide videos with potentially mature content.No filter is 100% accurate, but it should help you to avoid most of this type of content.</string>
+    <string name="restricated_mode_description">Restricted Mode</string>
+    <string name="prefs_enable_stats">prefs_enable_stats</string>
+    <string name="enable_stats">Enable stats for nerds</string>
+
+    <string-array name="pref_upload_quality_entries">
+        <item>360p</item>
+        <item>480p</item>
+        <item>720p</item>
+        <item>1080p</item>
+        <item>Original</item>
+    </string-array>
+
+    <string-array name="pref_remind_me_to_take_a_break">
+        <item>1 hours</item>
+        <item>2 hours</item>
+        <item>3 hours</item>
+        <item>5 hours</item>
+        <item>10 hours</item>
+    </string-array>
+
+    <string-array name="pref_seek_values">
+        <item>5</item>
+        <item>10</item>
+        <item>15</item>
+        <item>20</item>
+        <item>30</item>
+    </string-array>
+
+    <string-array name="pref_duration">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="pref_uploads">
+        <item>Only when on Wi-Fi</item>
+        <item>On any network</item>
+    </string-array>
+    <!-- Preference Titles -->
+    <string name="NotificationsHeader">Notifications</string>
+    <string name="sync_header">Themes and colors</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Dark Mode</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="title_activity_main_settings">MainSettingsActivity</string>
+
+    <!--    FAQ text-->
+
+    <string name="Q1">What is FunBayy</string>
+    <string name="Q2">Why some popular movies are not showing</string>
+
+    <string name="released_on_text"><u>RELEASED ON</u></string>
+    <!-- Content description used for talkback-->
+
+    <string name="moviePosterBigDescription">Main Movie poster</string>
+    <string name="moviePosterSmallDescription">Secondary Movie poster</string>
+    <string name="stars">Stars</string>
+    <string name="rating">rating</string>
+    <string name="time">time</string>
+    <string name="language">language</string>
+    <string name="fab1">Side menu button</string>
+    <string name="fab2">Settings button</string>
+</resources>

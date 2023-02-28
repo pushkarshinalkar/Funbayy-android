@@ -1,0 +1,87 @@
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <PreferenceCategory app:title="@string/NotificationsHeader"
+            android:icon="@drawable/show_noti_icon">
+
+            <SwitchPreferenceCompat
+                app:key="noti"
+                app:title="Enable Notifications"    />
+            <Preference
+                app:dependency="noti"
+                app:key="openSettings"
+                app:summary="Open app notifications settings"
+                app:title="System Notifications" />
+
+
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="@string/sync_header"
+            android:icon="@drawable/dark_mode_icon">
+
+
+            <SwitchPreferenceCompat
+                app:key="mode"
+                app:summaryOff="Dark mode Disabled"
+                app:summaryOn="Dark mode enabled"
+                app:title="@string/sync_title"
+                app:defaultValue="false"/>
+
+
+        </PreferenceCategory>
+
+
+        <PreferenceCategory app:title="Account"
+            android:icon="@drawable/privacy_icon">
+            <Preference
+                app:key="privacy"
+                app:title="Your Privacy" />
+
+
+            <ListPreference
+                app:entries="@array/location_entries"
+                app:entryValues="@array/location_values"
+                app:key="locationKey"
+                app:title="Loacation"
+                app:defaultValue="en"
+                app:useSimpleSummaryProvider="true" />
+
+            <SwitchPreferenceCompat
+                app:key="usePINkey"
+                app:summaryOff="Automatic Login"
+                app:summaryOn="Using security PIN"
+                app:title="Use PIN for login"
+                app:defaultValue="true"/>
+
+
+            <Preference
+                app:key="Logout"
+                app:title="Clear Profile and logout" />
+        </PreferenceCategory>
+
+        <PreferenceCategory app:title="Other"
+            android:icon="@drawable/setting_other_icon">
+            <Preference
+                app:key="donatekey"
+                app:summary="Your donations help us to grow :)"
+                app:title="Donote us" />
+
+            <Preference
+                app:key="otherappkey"
+                app:summary="Check out other apps form us!!"
+                app:title="Other apps" />
+
+<!--            <ListPreference-->
+<!--                app:defaultValue="English"-->
+<!--                app:entries="@array/languages"-->
+<!--                app:entryValues="@array/languageskey"-->
+<!--                app:key="languages"-->
+<!--                app:title="Language"-->
+<!--                app:useSimpleSummaryProvider="true" />-->
+
+
+        </PreferenceCategory>
+
+</PreferenceScreen>

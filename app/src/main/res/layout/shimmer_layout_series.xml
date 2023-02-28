@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:text="FunBayy"
+            android:textColor="@color/FunbayNameCol"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/shimmerseriesCard1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.32" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shimmerseriesCard1"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="110dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/shimmercol" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/shimmerseriesName1"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmercol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesCard1" />
+
+        <View
+            android:id="@+id/shimmerseriesDate1"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/shimmercol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesName1" />
+
+        <!--        Second card-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shimmerseriesCard2"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesDate1">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/shimmercol" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/shimmerseriesName2"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmercol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesCard2" />
+
+        <View
+            android:id="@+id/shimmerseriesDate2"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/shimmercol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesName2" />
+
+        <!--        Third card-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shimmerseriesCard3"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesDate2">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/shimmercol"/>
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/shimmerseriesName3"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmercol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesCard3" />
+
+        <View
+            android:id="@+id/shimmerseriesDate3"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/shimmercol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesName3" />
+
+        <!--        fourth card-->
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shimmerseriesCard4"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesDate3">
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/shimmercol" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/shimmerseriesName4"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmercol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesCard4" />
+
+        <View
+            android:id="@+id/shimmerseriesDate4"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/shimmercol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesName4" />
+
+        <!--        Fifth card-->
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/shimmerseriesCard5"
+            android:layout_width="200dp"
+            android:layout_height="300dp"
+            android:layout_marginTop="80dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesDate4">
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:background="@color/shimmercol" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/shimmerseriesName5"
+            android:layout_width="270dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/shimmercol"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesCard5" />
+
+        <View
+            android:id="@+id/shimmerseriesDate5"
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@color/shimmercol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shimmerseriesName5" />
+
+        <!--        Sixtth card-->
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>

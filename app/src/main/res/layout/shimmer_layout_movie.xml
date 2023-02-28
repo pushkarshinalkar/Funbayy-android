@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/transparent">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="FunBayy"
+        android:textColor="@color/FunbayNameCol"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/view1card"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.32" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineview12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineview13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.93" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view1card"
+            android:backgroundTint="@color/shimmercol"
+            android:layout_width="0dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="110dp"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineview13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guidelineview12"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewcardconst1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <view
+                    android:id="@+id/viewimg1"
+                    android:layout_width="170dp"
+                    android:layout_height="250dp"
+                    android:background="@color/darkshimmercol"
+                    app:riv_corner_radius="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.005"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintBottom_toTopOf="@id/movienameview1"
+                    class="com.makeramen.roundedimageview.RoundedImageView"/>
+
+                <View
+                    android:id="@+id/viewrelesed1"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35000002" />
+
+                <View
+                    android:id="@+id/movienameview1"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.071"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewimg1"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <View
+                    android:id="@+id/realeseddatecard1"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg1"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.52" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view2card"
+            android:layout_width="0dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="70dp"
+            android:backgroundTint="@color/shimmercol"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineview13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guidelineview12"
+            app:layout_constraintTop_toBottomOf="@id/view1card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewcardconst2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <view
+                    android:id="@+id/viewimg2"
+                    android:layout_width="170dp"
+                    android:layout_height="250dp"
+                    android:background="@color/darkshimmercol"
+                    app:riv_corner_radius="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.005"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintBottom_toTopOf="@id/movienameview2"
+                    class="com.makeramen.roundedimageview.RoundedImageView"/>
+
+                <View
+                    android:id="@+id/viewrelesed2"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35000002" />
+
+                <View
+                    android:id="@+id/movienameview2"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.071"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewimg2"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <View
+                    android:id="@+id/realeseddatecard2"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg2"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.52" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view3card"
+            android:backgroundTint="@color/shimmercol"
+            android:layout_width="0dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="70dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineview13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guidelineview12"
+            app:layout_constraintTop_toBottomOf="@id/view2card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewcardconst3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <view
+                    android:id="@+id/viewimg3"
+                    android:layout_width="170dp"
+                    android:layout_height="250dp"
+                    android:background="@color/darkshimmercol"
+                    app:riv_corner_radius="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.005"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintBottom_toTopOf="@id/movienameview3"
+                    class="com.makeramen.roundedimageview.RoundedImageView"/>
+
+                <View
+                    android:id="@+id/viewrelesed3"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35000002" />
+
+                <View
+                    android:id="@+id/movienameview3"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.071"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewimg3"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <View
+                    android:id="@+id/realeseddatecard3"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg3"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.52" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view4card"
+            android:backgroundTint="@color/shimmercol"
+            android:layout_width="0dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="110dp"
+
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintEnd_toStartOf="@id/guidelineview13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guidelineview12"
+            app:layout_constraintTop_toBottomOf="@id/view3card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewcardconst4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <view
+                    android:id="@+id/viewimg4"
+                    android:layout_width="170dp"
+                    android:layout_height="250dp"
+                    android:background="@color/darkshimmercol"
+                    app:riv_corner_radius="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.005"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintBottom_toTopOf="@id/movienameview4"
+                    class="com.makeramen.roundedimageview.RoundedImageView"/>
+
+                <View
+                    android:id="@+id/viewrelesed4"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35000002" />
+
+                <View
+                    android:id="@+id/movienameview4"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.071"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewimg4"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <View
+                    android:id="@+id/realeseddatecard4"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg4"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.52" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/view5card"
+            android:layout_width="0dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginBottom="100dp"
+            android:backgroundTint="@color/shimmercol"
+            app:cardCornerRadius="15dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/guidelineview13"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@id/guidelineview12"
+            app:layout_constraintTop_toBottomOf="@id/view4card">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/viewcardconst5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <view
+                    android:id="@+id/viewimg5"
+                    android:layout_width="170dp"
+                    android:layout_height="250dp"
+                    android:background="@color/darkshimmercol"
+                    app:riv_corner_radius="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.005"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.0"
+                    app:layout_constraintBottom_toTopOf="@id/movienameview5"
+                    class="com.makeramen.roundedimageview.RoundedImageView"/>
+
+                <View
+                    android:id="@+id/viewrelesed5"
+                    android:layout_width="0dp"
+                    android:layout_height="25dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.35000002" />
+
+                <View
+                    android:id="@+id/movienameview5"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.071"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/viewimg5"
+                    app:layout_constraintVertical_bias="0.25" />
+
+                <View
+                    android:id="@+id/realeseddatecard5"
+                    android:layout_width="0dp"
+                    android:layout_height="20dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:background="@color/darkshimmercol"
+                    app:layout_constraintHorizontal_bias="0.46"
+                    app:layout_constraintStart_toEndOf="@+id/viewimg5"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.52" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
